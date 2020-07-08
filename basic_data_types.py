@@ -32,7 +32,6 @@ def second_lowest():
 	print(*[i for i in name], sep="\n")
 
 
-
 # Finding the percentage
 def percentage_grade():
 	students = {}
@@ -44,12 +43,9 @@ def percentage_grade():
 	print(("{:.2f}".format(sum(media[0:3])/3)))
 
 
-# Lists
-def create_your_own_list():
-
-
-
-
 if __name__ == '__main__':
+	# simple_list_maker()
+	# runner_up()
+	# second_lowest()
 	percentage_grade()
 
