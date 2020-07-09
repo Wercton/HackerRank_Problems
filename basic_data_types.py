@@ -42,10 +42,35 @@ def percentage_grade():
 	media = students[input()]
 	print(("{:.2f}".format(sum(media[0:3])/3)))
 
+	
+# Lists
+def create_your_own_list():
+	user_list = []
+	command = {'insert': user_list.insert,
+				'remove': user_list.remove,
+				'append': user_list.append,
+				'sort': user_list.sort,
+				'pop': user_list.pop,
+				'reverse': user_list.reverse}
+	for _ in range(int(input())):
+		demand, *positions = input().split()
+		if demand == 'print':
+			print(user_list)
+		else:
+			command[demand](*map(int,positions))
+
+
+# Tuples
+def hash_me_please():
+	n = input()
+	print(hash(tuple(map(int, input().split()))))
+
 
 if __name__ == '__main__':
 	# simple_list_maker()
 	# runner_up()
 	# second_lowest()
-	percentage_grade()
+	# percentage_grade()
+	# create_your_own_list()
+	hash_me_please()
 
