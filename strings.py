@@ -20,8 +20,27 @@ def to_change_a_char():
 	print(word[:int(place)] + letter + word[int(place)+1:])
 
 
+# String Validators
+def show_me_what_you_have():
+	string = input()
+	print(any(i.isalnum() for i in string))
+	print(any(i.isalpha() for i in string))
+	print(any(i.isdigit() for i in string))
+	print(any(i.islower() for i in string))
+	print(any(i.isupper() for i in string))
+
+
+# Text Wrap
+def wrapping():
+	string, width = input(), int(input())
+	print(*[_ for _ in textwrap.wrap(string, 10)], sep="\n")
+
+
 if __name__ == '__main__':
 	# swap_case()
 	# translate_to_hifen_language()
 	# call_me_by_this_name()
-	to_change_a_char()
+	# to_change_a_char()
+	# show_me_what_you_have()
+	wrapping()
+	
