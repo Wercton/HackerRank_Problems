@@ -35,12 +35,28 @@ def wrapping():
 	string, width = input(), int(input())
 	print(*[_ for _ in textwrap.wrap(string, 10)], sep="\n")
 
+	
+# Designer Door Mat
+def door_mat():
+	n, m = map(int, input().split())
+	halfn, halfm = n//2, m//2
+	j = halfm-1
+	for i in range(1, n, 2):
+		print('-' * j + ".|." * i + '-' * j)
+		j -= 3
+	print("-" * (halfm-3) + "WELCOME" + "-" * (halfm-3))
+	j = 3
+	for i in range(n-2, 0, -2):
+		print('-' * j + ".|." * i + '-' * j)
+		j += 3
 
+	
 if __name__ == '__main__':
 	# swap_case()
 	# translate_to_hifen_language()
 	# call_me_by_this_name()
 	# to_change_a_char()
 	# show_me_what_you_have()
-	wrapping()
+	# wrapping()
+	door_mat()
 	
