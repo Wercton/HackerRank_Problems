@@ -38,17 +38,39 @@ def wrapping():
 	
 # Designer Door Mat
 def door_mat():
-	n, m = map(int, input().split())
-	halfn, halfm = n//2, m//2
-	j = halfm-1
+	n, m map(int, int().split())
 	for i in range(1, n, 2):
-		print('-' * j + ".|." * i + '-' * j)
-		j -= 3
-	print("-" * (halfm-3) + "WELCOME" + "-" * (halfm-3))
-	j = 3
+		print((".|." * i).center(m, "-"))
+	print("WELCOME".center(m, "-"))
 	for i in range(n-2, 0, -2):
-		print('-' * j + ".|." * i + '-' * j)
+		print((".|." * i).center(m, "-"))
 		j += 3
+
+
+# Text Alignment
+def hacker_rank_logo():
+	thickness = int(input())
+	c = 'H'
+	
+	# Top Cone
+	for i in range(thickness):
+		print((c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1))
+	
+	# Top Pillars
+	for i in range(thickness+1):
+		print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))	
+	
+	#Middle Belt
+	for i in range((thickness+1)//2):
+	    print((c*thickness*5).center(thickness*6))
+   	
+   	#Bottom Pillars
+	for i in range(thickness+1):
+		print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
+
+	#Bottom Cone
+	for i in range(thickness):
+		print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
 
 	
 if __name__ == '__main__':
