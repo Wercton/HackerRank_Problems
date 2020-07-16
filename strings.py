@@ -38,7 +38,7 @@ def wrapping():
 	
 # Designer Door Mat
 def door_mat():
-	n, m map(int, int().split())
+	n, m = map(int, int().split())
 	for i in range(1, n, 2):
 		print((".|." * i).center(m, "-"))
 	print("WELCOME".center(m, "-"))
@@ -72,7 +72,19 @@ def hacker_rank_logo():
 	for i in range(thickness):
 		print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
 
-	
+
+# Capitalize
+def capital_letter():
+	s = list(input())
+	for i in range(len(s)):
+		if s[i] == ' ':
+			if s[i+1] != ' ':
+				s[i+1] = s[i+1].capitalize()
+		elif i == 0:
+			s[i] = s[i].capitalize()
+	print(s)
+
+
 if __name__ == '__main__':
 	# swap_case()
 	# translate_to_hifen_language()
@@ -80,5 +92,5 @@ if __name__ == '__main__':
 	# to_change_a_char()
 	# show_me_what_you_have()
 	# wrapping()
-	door_mat()
-	
+	# door_mat()
+	capital_letter()
