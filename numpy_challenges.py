@@ -1,16 +1,18 @@
 import numpy
 
-
+# Arrays
 def reverse_array():
 	l = input().split()
 	print(numpy.array(l[::-1], float))
 
 
+# Shape and Reshape
 def cube_shape():
 	l = "1 2 3 4 5 6 7 8 9".split()
 	print(numpy.reshape(numpy.array(l, int), (3, 3)))
 
 
+# Transpose and Flatten
 def smithing_the_array():
 	column, line = map(int, input().split())
 	l = [i for i in range(1, (column * line) + 1)]
@@ -20,6 +22,7 @@ def smithing_the_array():
 	print(np.flatten())
 
 
+# Concatenate
 def come_together_array():
 	line1, line2, column = map(int, input().split())
 	l1, l2 = [], []
@@ -33,6 +36,7 @@ def come_together_array():
 	print(np)
 
 
+# Zeros and Ones
 def zeros_and_ones():
 	values = tuple(map(int, input().split()))
 	print(numpy.zeros(values, dtype=numpy.int))
@@ -45,10 +49,31 @@ def identity():
 	print(numpy.eye(n, m))
 
 
+# Array Mathematics
+def mathrray():
+	x, y = map(int, input().split())
+	l1, l2 = [], []
+	for i in range(x):
+		l1.append(list(map(int, input().split())))
+	for i in range(x):
+		l2.append(list(map(int, input().split())))
+	l1 = numpy.array(l1, int)
+	l2 = numpy.array(l2, int)
+	print(l1 + l2, l1 - l2, l1 * l2, l1 // l2, l1 % l2, l1 ** l2, sep="\n")
+
+
+# Floor, Ceil and Rint
+def floor_rint_ceil():
+	np = numpy.array(list(input().split()), float)
+	print(numpy.floor(np), numpy.ceil(np), numpy.rint(np), sep="\n")
+
+
 if __name__ == '__main__':
 	# reverse_array()
 	# cube_shape()
 	# smithing_the_array()
 	# come_together_array()
 	# zeros_and_ones()
-	identity()
+	# identity()
+	# mathrray()
+	floor_rint_ceil()
