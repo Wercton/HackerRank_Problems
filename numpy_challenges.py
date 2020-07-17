@@ -39,9 +39,16 @@ def zeros_and_ones():
 	print(numpy.ones(values, dtype=numpy.int))
 
 
+# Eye and Identity
+def identity():
+	n, m = map(int, input().split())
+	print(numpy.eye(n, m))
+
+
 if __name__ == '__main__':
 	# reverse_array()
 	# cube_shape()
 	# smithing_the_array()
 	# come_together_array()
-	zeros_and_ones()
+	# zeros_and_ones()
+	identity()
