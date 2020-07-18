@@ -68,6 +68,15 @@ def floor_rint_ceil():
 	print(numpy.floor(np), numpy.ceil(np), numpy.rint(np), sep="\n")
 
 
+# Sum and Prod
+def sum_prod_array():
+	n, m = map(int, input().split())
+	np = numpy.array([input().split() for _ in range(n)], int)
+	np = numpy.prod(numpy.sum(np, axis=0))
+	print(np)
+
+
+
 if __name__ == '__main__':
 	# reverse_array()
 	# cube_shape()
@@ -76,4 +85,5 @@ if __name__ == '__main__':
 	# zeros_and_ones()
 	# identity()
 	# mathrray()
-	floor_rint_ceil()
+	# floor_rint_ceil()
+	sum_prod_array()
