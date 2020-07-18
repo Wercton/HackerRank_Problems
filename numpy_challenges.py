@@ -76,6 +76,13 @@ def sum_prod_array():
 	print(np)
 
 
+# Min and Max
+def max_of_min():
+	n, m = map(int, input().split())
+	np = numpy.array([input().split() for _ in range(n)], int)
+	np = numpy.max(numpy.min(np, axis=1))
+	print(np)
+
 
 if __name__ == '__main__':
 	# reverse_array()
@@ -86,4 +93,5 @@ if __name__ == '__main__':
 	# identity()
 	# mathrray()
 	# floor_rint_ceil()
-	sum_prod_array()
+	# sum_prod_array()
+	max_of_min()
