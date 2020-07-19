@@ -111,6 +111,10 @@ def polynomials():
 	print(numpy.polyval(numpy.array(input().split(), float), float(input())))
 
 
+# Linear Algebra
+def determinant():
+	print('{:.2f}'.format(numpy.linalg.det(numpy.array([input().split() for _ in range(int(input()))],float))))
+
 if __name__ == '__main__':
 	# reverse_array()
 	# cube_shape()
@@ -125,5 +129,6 @@ if __name__ == '__main__':
 	# mean_var_std()
 	# matrix_product()
 	# inner_outer()
-	polynomials()
+	# polynomials()
+	determinant()
 	
