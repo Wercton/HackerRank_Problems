@@ -84,6 +84,13 @@ def max_of_min():
 	print(np)
 
 
+# Mean, Var, and Std
+def mean_var_std():
+	n, m = map(int, input().split())
+	np = numpy.array([input().split() for _ in range(n)], int)
+	print(numpy.mean(np, axis=1), numpy.var(np, axis=0), numpy.std(np), sep="\n")
+
+
 if __name__ == '__main__':
 	# reverse_array()
 	# cube_shape()
@@ -94,4 +101,5 @@ if __name__ == '__main__':
 	# mathrray()
 	# floor_rint_ceil()
 	# sum_prod_array()
-	max_of_min()
+	# max_of_min()
+	mean_var_std()
