@@ -91,6 +91,26 @@ def mean_var_std():
 	print(numpy.mean(np, axis=1), numpy.var(np, axis=0), numpy.std(np), sep="\n")
 
 
+# Dot and Cross
+def matrix_product():
+	n = int(input())
+	A = numpy.array([input().split() for _ in range(n)], int)
+	B = numpy.array([input().split() for _ in range(n)], int)
+	print(numpy.dot(A, B))
+
+
+# Inner and Outer
+def inner_outer():
+	A = numpy.array(input().split(), int)
+	B = numpy.array(input().split(), int)
+	print(numpy.inner(A, B), numpy.outer(A, B), sep="\n")
+
+
+# Polynomials
+def polynomials():
+	print(numpy.polyval(numpy.array(input().split(), float), float(input())))
+
+
 if __name__ == '__main__':
 	# reverse_array()
 	# cube_shape()
@@ -102,4 +122,8 @@ if __name__ == '__main__':
 	# floor_rint_ceil()
 	# sum_prod_array()
 	# max_of_min()
-	mean_var_std()
+	# mean_var_std()
+	# matrix_product()
+	# inner_outer()
+	polynomials()
+	
