@@ -1,3 +1,5 @@
+import string
+
 # Swap case
 def swap_case():
 	print (''.join([i.lower() if i.isupper() else i.upper() for i in input()]))
@@ -86,25 +88,44 @@ def capital_letter():
 
 
 # String Formatting
-def string_formatting():
-	number = 2
-	for i in range(1, number+1):
-		number8, number16, number2 = str(oct(i)), str(hex(i)), str(bin(i))
-		width = (len(str(i)), len(number8), len(number16), len(number2))
-		print('{:2d}'.format(i), '{:2s}'.format(number8[2:]), '{:2s}'.format(number16[2:].upper()), '{:2s}'.format(number2[2:]))
-
-
-def formatting_again():
+def numbers_convention_formatting():
 	number = 17
 	largura = len("{0:b}".format(number))
 	for i in range(1, number+1):
 		print("{0:{largura}d} {0:{largura}o} {0:{largura}X} {0:{largura}b}".format(i, largura=largura))
 
 
-
 # Alphabet Rangoli
 def alphabet_rangoli():
-	pass
+	size = 10
+	largura = ((size * 2) - 1) + ((size * 2) -2)
+	list_alphabet = list(string.ascii_lowercase)
+
+	for i in range(size):
+		output_list = ""
+
+		for u in range(i+1):
+			output_list += list_alphabet[size-(u+1)]
+		size_list = len(output_list)
+
+		if size_list > 1:
+			output_string = output_list[:size_list-1] + output_list[size_list-1] + output_list[-2::-1]
+		else:
+			output_string = output_list[0]
+		print('-'.join(output_string).center(largura, "-"))
+
+	for i in range(size - 2, -1, -1):
+		output_list = ""
+
+		for u in range(i + 1):
+			output_list += list_alphabet[size-(u+1)]
+
+		size_list = len(output_list)
+		if size_list > 1:
+			output_string = output_list[:size_list-1] + output_list[size_list-1] + output_list[-2::-1]
+		else:
+			output_string = output_list[0]
+		print('-'.join(output_string).center(largura, "-"))
 
 
 if __name__ == '__main__':
@@ -117,4 +138,5 @@ if __name__ == '__main__':
 	# door_mat()
 	# capital_letter()
 	# string_formatting()
-	formatting_again()
+	# formatting_again()
+	alphabet_rangoli()
