@@ -97,7 +97,7 @@ def numbers_convention_formatting():
 
 # Alphabet Rangoli
 def alphabet_rangoli():
-	size = 10
+	size = int(input())
 	largura = ((size * 2) - 1) + ((size * 2) -2)
 	list_alphabet = list(string.ascii_lowercase)
 
@@ -122,10 +122,35 @@ def alphabet_rangoli():
 
 		size_list = len(output_list)
 		if size_list > 1:
-			output_string = output_list[:size_list-1] + output_list[size_list-1] + output_list[-2::-1]
+			output_string = output_list[:size_list-1] + output_list[-1::-1]
 		else:
 			output_string = output_list[0]
 		print('-'.join(output_string).center(largura, "-"))
+
+
+# The Minion Game
+def minion_game():
+	string = "BANANA"
+	stuartPoint, kevinPoint = 0, 0
+	vowel = "AEIOU"
+
+	for i in range(len(string)):
+		if string[i] in vowel:
+			kevinPoint += len(string) - i 
+		else:
+			stuartPoint += len(string) - i
+			
+	if stuartPoint > kevinPoint:
+		print("Stuart", stuartPoint)
+	elif stuartPoint < kevinPoint:
+		print("Kevin", kevinPoint)
+	else:
+		print("Draw")
+
+
+
+
+
 
 
 if __name__ == '__main__':
@@ -139,4 +164,6 @@ if __name__ == '__main__':
 	# capital_letter()
 	# string_formatting()
 	# formatting_again()
-	alphabet_rangoli()
+	# alphabet_rangoli()
+	minion_game()	
+
