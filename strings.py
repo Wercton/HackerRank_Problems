@@ -139,7 +139,7 @@ def minion_game():
 			kevinPoint += len(string) - i 
 		else:
 			stuartPoint += len(string) - i
-			
+
 	if stuartPoint > kevinPoint:
 		print("Stuart", stuartPoint)
 	elif stuartPoint < kevinPoint:
@@ -148,9 +148,19 @@ def minion_game():
 		print("Draw")
 
 
+# Merge the Tools!
+def merge_the_tools():
+	string, value = input(), int(input())
+	number_of_segments = len(string)//value
+	myit = iter(string)
 
-
-
+	for i in range(1, number_of_segments + 1):
+		string_segmented = []
+		for u in range(value):
+			char = next(myit)
+			if char not in string_segmented:
+				string_segmented.append(char)
+		print("".join(string_segmented))
 
 
 if __name__ == '__main__':
@@ -165,5 +175,5 @@ if __name__ == '__main__':
 	# string_formatting()
 	# formatting_again()
 	# alphabet_rangoli()
-	minion_game()	
-
+	# minion_game()	
+	merge_the_tools()
