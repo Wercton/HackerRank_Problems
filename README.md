@@ -2,23 +2,27 @@
 
 # HackerRank_Problems
 
+[![GitHub commit activity the past week, 4 weeks, year](https://img.shields.io/github/commit-activity/y/wercton/HackerRank_Problems)](https://github.com/Wercton/HackerRank_Problems)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Wercton/HackerRank_Problems)](https://github.com/Wercton/HackerRank_Problems) 
+[![GitHub stars](https://img.shields.io/github/stars/Wercton/HackerRank_Problems?color=orange)](https://github.com/Wercton/HackerRank_Problems)
+
 Minhas submições aos problemas propostos em [HackerRank](https://www.hackerrank.com/dashboard).\
 A solução de cada exercício está dividido em funções dentro dos arquivos nomeados com seus respectivos assuntos.\
-\
-- **Python**
-  - **basic_data_types.py**
-    - simple_list_maker() # prints all x, y, z list combinations in which the sum is not n
-    - runner_up() # prints the runner up , or the second biggest number
-    - second_lowest() # prints the second worst score
-    - percentage_grade() # given some students grade, prints the media of the student asked
-    - create_your_own_list() # the user can make it's own list by using the pyhton commands
-    - hash_me_please() # prints the hash of a tuple
 
-**"introduction.py":**  
-  - print_string() # prints "Hello, World!"  
-  - weird_number() # tells if a number is weird or not  
-  - simple_arithmetic() # gets two numbers and add, subtract and multiply them  
-  - simple_division() # divides two numbers that results in its both int and float version 
-  - simple_loop() # prints the results from 0 to n powered by 2  
-  - leap_year() # tells if it's a leap year or not  
-  - simple_string() # the output is a string that starts at 1 and goes until n  
+- **Python**
+  - [**"Introduction**](https://github.com/Wercton/HackerRank_Problems/blob/master/Python/introduction.py)
+    - Say "Hello, World!" With Python | [Problema](https://www.hackerrank.com/challenges/py-hello-world/problem)
+    - Python If-Else | [Problema](https://www.hackerrank.com/challenges/py-if-else)
+    - Arithmetic Operators | [Problema](https://www.hackerrank.com/challenges/python-arithmetic-operators)
+    - Python: Division | [Problema](https://www.hackerrank.com/challenges/python-division)
+    - Loops | [Problema](https://www.hackerrank.com/challenges/python-loops)
+    - Write a function | [Problema](https://www.hackerrank.com/challenges/write-a-function)
+    - Print Function | [Problema](https://www.hackerrank.com/challenges/python-print)
+
+  - [**Basic Data Types**](https://github.com/Wercton/HackerRank_Problems/blob/master/Python/basic_data_types.py)
+    - List Comprehensions | [Problema](https://www.hackerrank.com/challenges/list-comprehensions)
+    - Find the Runner-Up Score! | [Problema](https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list)
+    - Nested Lists | [Problema](https://www.hackerrank.com/challenges/nested-list)
+    - Finding the perccentage | [Problema](https://www.hackerrank.com/challenges/finding-the-percentage)
+    - Lists | [Problema](https://www.hackerrank.com/challenges/python-lists)
+    - Tuples | [Problema](https://www.hackerrank.com/challenges/python-tuples)
