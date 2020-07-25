@@ -1,5 +1,5 @@
-# hackerrank_python
-My submits to the programming problems proposed at https://www.hackerrank.com/
+# HackerRank_Problems
+My submission to the programming problems proposed at https://www.hackerrank.com/
 
 **basic_data_types.py**
   - simple_list_maker() # prints all x, y, z list combinations in which the sum is not n
