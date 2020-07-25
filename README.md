@@ -3,15 +3,16 @@
 # HackerRank_Problems
 
 Minhas submições aos problemas propostos em [HackerRank](https://www.hackerrank.com/dashboard).\
-A solução de cada exercício está dividido em funções dentro dos arquivos nomeados com seus respectivos assuntos.
-
-**basic_data_types.py**
-  - simple_list_maker() # prints all x, y, z list combinations in which the sum is not n
-  - runner_up() # prints the runner up , or the second biggest number
-  - second_lowest() # prints the second worst score
-  - percentage_grade() # given some students grade, prints the media of the student asked
-  - create_your_own_list() # the user can make it's own list by using the pyhton commands
-  - hash_me_please() # prints the hash of a tuple
+A solução de cada exercício está dividido em funções dentro dos arquivos nomeados com seus respectivos assuntos.\
+\
+- **Python**
+  - **basic_data_types.py**
+    - simple_list_maker() # prints all x, y, z list combinations in which the sum is not n
+    - runner_up() # prints the runner up , or the second biggest number
+    - second_lowest() # prints the second worst score
+    - percentage_grade() # given some students grade, prints the media of the student asked
+    - create_your_own_list() # the user can make it's own list by using the pyhton commands
+    - hash_me_please() # prints the hash of a tuple
 
 **"introduction.py":**  
   - print_string() # prints "Hello, World!"  
