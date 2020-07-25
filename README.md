@@ -1,4 +1,7 @@
+<p align="center"><a href="https://www.hackerrank.com/werctonmatheus"><img src="https://www.lever.co/wp-content/uploads/2019/04/hackerrank-large-1.png" ></a></p>
+
 # HackerRank_Problems
+
 Minhas submições aos problemas propostos em [HackerRank](https://www.hackerrank.com/dashboard).\
 A solução de cada exercício está dividido em funções dentro dos arquivos nomeados com seus respectivos assuntos.
 
