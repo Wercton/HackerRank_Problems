@@ -1,5 +1,6 @@
 # HackerRank_Problems
-My submission to the programming problems proposed at https://www.hackerrank.com/
+Minhas submições aos problemas propostos em [HackerRank](https://www.hackerrank.com/dashboard)
+Each problem is divided into functions
 
 **basic_data_types.py**
   - simple_list_maker() # prints all x, y, z list combinations in which the sum is not n
