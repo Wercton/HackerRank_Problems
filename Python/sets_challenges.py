@@ -17,7 +17,16 @@ def mesuring_happiness():
 	print(len(happy) - len(sad))
 
 
+# Symmetric Difference
+def symmetric_difference():
+
+	setA = [list(map(int, input().split())) for _ in range(4)]
+	setB = set(setA[1]).difference(set(setA[3]))
+	setB.update(set(setA[3]).difference(set(setA[1])))
+	print(*[i for i in sorted(setA, key=int)], sep="\n")
+
 
 if __name__ == '__main__':
 	# taking_avarage()
-	mesuring_happiness()
+	# mesuring_happiness()
+	symmetric_difference()
