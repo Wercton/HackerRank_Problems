@@ -26,7 +26,25 @@ def symmetric_difference():
 	print(*[i for i in sorted(setA, key=int)], sep="\n")
 
 
+# Set .add()
+def counting_unique_stamps():
+	stamps = set()
+	[stamps.add(input()) for _ in range(int(input()))]
+	print(len(stamps))
+
+
+# Set .discard(), .remove() & .pop()
+
+# Set .union() Operation
+def number_of_individuals():
+	englishClass, frenchClass = [input().split() for _ in range(4)][1::2]
+	print(len(set(englishClass) | set(frenchClass)))
+
+
 if __name__ == '__main__':
 	# taking_avarage()
 	# mesuring_happiness()
-	symmetric_difference()
+	# symmetric_difference()
+	# counting_unique_stamps()
+	#
+	number_of_individuals()
