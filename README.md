@@ -46,6 +46,18 @@ A solução de cada exercício está dividido em funções dentro dos arquivos n
   - [**Sets**](https://github.com/Wercton/HackerRank_Problems/blob/master/Python/sets_challenges.py)
     - Introduction to Sets | [Problema](https://www.hackerrank.com/challenges/py-introduction-to-sets)
     - No Idea! | [Problema](https://www.hackerrank.com/challenges/no-idea)
+    - Symmetric Difference | [Problema](https://www.hackerrank.com/challenges/symmetric-difference)
+    - Set .add() | [Problema](https://www.hackerrank.com/challenges/py-set-add)
+    - Set .discard(), .remove() & .pop() | [Problema](https://www.hackerrank.com/challenges/py-set-discard-remove-pop)
+    - Set .union() Operation | [Problema](https://www.hackerrank.com/challenges/py-set-union)
+    - Set .intersection() Operation | [Problema](https://www.hackerrank.com/challenges/py-set-intersection-operation)
+    - Set .difference() Operation | [Problema](https://www.hackerrank.com/challenges/py-set-difference-operation)
+    - Set .symmetric_difference() Operation | [Problema](https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation)
+    - Set Mutations | [Problema](https://www.hackerrank.com/challenges/py-set-mutations)
+    - The Captain's Room | [Problema](https://www.hackerrank.com/challenges/py-the-captains-room)
+    - Check Subset | [Problema](https://www.hackerrank.com/challenges/py-check-subset)
+    - Check Strict Superset | [Problema](https://www.hackerrank.com/challenges/py-check-strict-superset)
+    
     
   - **Math**
   
@@ -84,5 +96,6 @@ A solução de cada exercício está dividido em funções dentro dos arquivos n
     - Dot and Cross | [Problema](https://www.hackerrank.com/challenges/np-dot-and-cross)
     - Inner and Outer | [Problema](https://www.hackerrank.com/challenges/np-inner-and-outer)
     - Polynomials | [Problema](https://www.hackerrank.com/challenges/np-polynomials)
+    - Linear Algebra | [Problema](https://www.hackerrank.com/challenges/np-linear-algebra)
   
   - **Debugging**
