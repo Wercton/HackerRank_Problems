@@ -90,6 +90,20 @@ def mutating_your_own_set():
 
 
 # The Captain's Room
+def captain_room():
+
+	_ = input()
+	all_individuals = input().split()
+	setA, setB = set(), set()
+	
+	for i in all_individuals:
+		if i not in setA:
+			setA.add(i)
+		else:
+			setB.add(i)
+
+	print(list(setA ^ setB)[0])
+
 
 # Check Subset
 def is_it_subset():
@@ -99,7 +113,15 @@ def is_it_subset():
 		print(len(setA | setB) == len(setB))
 
 
+def is_it_superset():
 
+	setA = set(map(int, input().split()))
+	flag = True
+	for _ in range(int(input())):
+		if not setA.issuperset(set(map(int, input().split()))):
+			flag = False
+
+	print(flag)
 
 
 if __name__ == '__main__':
@@ -113,5 +135,7 @@ if __name__ == '__main__':
 	# differenciation_set()
 	# symmetric_differenciation_set()
 	# mutating_your_own_set()
-	is_it_subset()
+	# captain_room()
+	# is_it_subset()
+	is_it_superset()
 
