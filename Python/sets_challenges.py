@@ -28,17 +28,78 @@ def symmetric_difference():
 
 # Set .add()
 def counting_unique_stamps():
+
 	stamps = set()
 	[stamps.add(input()) for _ in range(int(input()))]
 	print(len(stamps))
 
 
 # Set .discard(), .remove() & .pop()
+def manipulate_your_own_set():
+
+	_, mySet = [set(map(int, input().split())) for _ in range(2)]
+
+	for _ in range(int(input())):
+		string = input().split()
+		if string[0] != "pop":
+			eval("mySet.{0}({1})".format(string[0], string[1]))
+		else:
+			mySet.pop()
+
+	print(sum(mySet))
+
 
 # Set .union() Operation
 def number_of_individuals():
+
 	englishClass, frenchClass = [input().split() for _ in range(4)][1::2]
 	print(len(set(englishClass) | set(frenchClass)))
+
+
+# Set .intersection() Operation
+def intersection_set():
+
+	englishClass, frenchClass = [input().split() for _ in range(4)][1::2]
+	print(len(set(englishClass) & set(frenchClass)))
+
+
+# Set .difference() Operation
+def differenciation_set():
+
+	englishClass, frenchClass = [input().split() for _ in range(4)][1::2]
+	print(len(set(englishClass) - set(frenchClass)))
+
+
+# Set .symmetric_difference() Operation
+def symmetric_differenciation_set():
+
+	englishClass, frenchClass = [input().split() for _ in range(4)][1::2]
+	print(len(set(englishClass) ^ set(frenchClass)))
+
+
+# Set Mutations
+def mutating_your_own_set():
+
+	_, mySet = [set(map(int, input().split())) for _ in range(2)]
+
+	for _ in range(int(input())):
+		command = input().split()
+		eval("{0}.{1}({2})".format("mySet", command[0], str(set(map(int, input().split())))))
+
+	print(sum(mySet))
+
+
+# The Captain's Room
+
+# Check Subset
+def is_it_subset():
+
+	for _ in range(int(input())):
+		setA, setB = [set(map(int, input().split())) for _ in range(4)][1::2]
+		print(len(setA | setB) == len(setB))
+
+
+
 
 
 if __name__ == '__main__':
@@ -46,5 +107,11 @@ if __name__ == '__main__':
 	# mesuring_happiness()
 	# symmetric_difference()
 	# counting_unique_stamps()
-	#
-	number_of_individuals()
+	# manipulate_your_own_set()
+	# number_of_individuals()
+	# intersection_set()
+	# differenciation_set()
+	# symmetric_differenciation_set()
+	# mutating_your_own_set()
+	is_it_subset()
+
