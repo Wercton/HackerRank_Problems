@@ -68,10 +68,18 @@ A solução de cada exercício está dividido em funções dentro dos arquivos n
   - **Data and Time**
   
   - **Errors and Exceptions**
+    - Exceptions | [Problema](https://www.hackerrank.com/challenges/exceptions)
+    - Incorrect Regex | [Problema](https://www.hackerrank.com/challenges/incorrect-regex)
   
   - **Classes**
   
   - **Built-Ins**
+    - Zipped! | [Problema](https://www.hackerrank.com/challenges/zipped)
+    - Input() | [Problema](https://www.hackerrank.com/challenges/input)
+    - Python Evaluation | [Problema](https://www.hackerrank.com/challenges/python-eval)
+    - Athlete Sort | [Problema](https://www.hackerrank.com/challenges/python-sort-sort)
+    - Any or All | [Problema](https://www.hackerrank.com/challenges/any-or-all)
+    - ginortS | [Problema](https://www.hackerrank.com/challenges/ginorts)
   
   - **Python Functionals**
   
