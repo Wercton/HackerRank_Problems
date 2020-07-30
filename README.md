@@ -67,13 +67,13 @@ A solução de cada exercício está dividido em funções dentro dos arquivos n
   
   - **Data and Time**
   
-  - **Errors and Exceptions**
+  - [**Errors and Exceptions**](https://github.com/Wercton/HackerRank_Problems/blob/master/Python/exceptions.py)
     - Exceptions | [Problema](https://www.hackerrank.com/challenges/exceptions)
     - Incorrect Regex | [Problema](https://www.hackerrank.com/challenges/incorrect-regex)
   
   - **Classes**
   
-  - **Built-Ins**
+  - [**Built-Ins**](https://github.com/Wercton/HackerRank_Problems/blob/master/Python/built-ins.py)
     - Zipped! | [Problema](https://www.hackerrank.com/challenges/zipped)
     - Input() | [Problema](https://www.hackerrank.com/challenges/input)
     - Python Evaluation | [Problema](https://www.hackerrank.com/challenges/python-eval)
