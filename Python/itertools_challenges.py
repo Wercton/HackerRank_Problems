@@ -39,9 +39,21 @@ def compressing_string():
 	sliced_string = []
 
 	for content, length in itertools.groupby(string):
-		sliced_string.append((len(length), int(content)))
+		sliced_string.append((sum(1 for _ in length), int(content)))
 
 	[print(i, end=" ") for i in sliced_string]
+
+
+# Iterables and Iterators
+def probability_of_a_letter():
+
+	_ = int(input())
+	letters = input().split()
+	together = int(input())
+	#letters = [(quantity[i], letters[i]) for i in range(len(quantity))]
+	occurances = [i for i in itertools.combinations(letters, together)]
+
+	print(round(sum(1 for i in occurances if 'a' in i)/len(occurances), 3))
 
 
 if __name__ == '__main__':
@@ -49,4 +61,5 @@ if __name__ == '__main__':
 	# permutating_characters()
 	# char_combinations()
 	# char_combinations_with_replacmente()
-	compressing_string()
+	# compressing_string()
+	probability_of_a_letter()
