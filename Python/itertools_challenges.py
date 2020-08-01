@@ -50,7 +50,7 @@ def probability_of_a_letter():
 	_ = int(input())
 	letters = input().split()
 	together = int(input())
-	#letters = [(quantity[i], letters[i]) for i in range(len(quantity))]
+	
 	occurances = [i for i in itertools.combinations(letters, together)]
 
 	print(round(sum(1 for i in occurances if 'a' in i)/len(occurances), 3))
