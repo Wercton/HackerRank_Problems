@@ -56,10 +56,70 @@ def probability_of_a_letter():
 	print(round(sum(1 for i in occurances if 'a' in i)/len(occurances), 3))
 
 
+# Maximize It
+def maximizing_it_1():
+
+	numberOfTimes, M = map(int, input().split())
+	summing = 0
+
+	for _ in range(numberOfTimes):
+		summing += max(list(map(lambda x: abs(int(x)), input().split()[1:]))) ** 2
+		print(summing)
+
+	print(summing % M)
+
+def maximizing_it_2():
+
+	numberOfTimes, M = map(int, input().split())
+	summing = 0
+	test = []
+
+	for _ in range(numberOfTimes):
+
+		lists = list(map(int, input().split()[1:]))
+		get_max = list(enumerate(list(map(lambda x: (x ** 2) % M, lists))))
+		
+		for index, value in get_max:
+			test.append((value, index))
+
+		summing += lists[max(test)[1]] ** 2
+
+	print(summing % M)
+
+
+def maximizing_it_3():
+
+	numberOfTimes, M = map(int, input().split())
+
+	soManyLists = [list(map(lambda x: int(x) ** 2, input().split()[1:])) for _ in range(numberOfTimes)]
+	soManyLists = list(map(lambda x: sum(x)%M, list(itertools.product(*soManyLists))))
+
+	'''for i in soManyLists:
+					summing.append(sum(i)%M)'''
+
+	print(max(soManyLists))
+
+
+
+'''
+7 867
+7 6429964 4173738 9941618 2744666 5392018 5813128 9452095
+7 6517823 4135421 6418713 9924958 9370532 7940650 2027017
+7 1506500 3460933 1550284 3679489 4538773 5216621 5645660
+7 7443563 5181142 8804416 8726696 5358847 7155276 4433125
+7 2230555 3920370 7851992 1176871 610460 309961 3921536
+7 8518829 8639441 3373630 5036651 5291213 2308694 7477960
+7 7178097 249343 9504976 8684596 6226627 1055259 4880436
+
+866
+'''
+
+
 if __name__ == '__main__':
 	# cartesian_product()
 	# permutating_characters()
 	# char_combinations()
 	# char_combinations_with_replacmente()
 	# compressing_string()
-	probability_of_a_letter()
+	# probability_of_a_letter()
+	maximizing_it_3()
