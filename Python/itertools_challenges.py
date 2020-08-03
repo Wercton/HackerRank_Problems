@@ -57,47 +57,14 @@ def probability_of_a_letter():
 
 
 # Maximize It
-def maximizing_it_1():
+def maximizing_it():
 
-	numberOfTimes, M = map(int, input().split())
-	summing = 0
+numberOfTimes, M = map(int, input().split())
 
-	for _ in range(numberOfTimes):
-		summing += max(list(map(lambda x: abs(int(x)), input().split()[1:]))) ** 2
-		print(summing)
+soManyLists = [list(map(lambda x: int(x) ** 2, input().split()[1:])) for _ in range(numberOfTimes)]
+soManyLists = list(map(lambda x: sum(x)%M, list(itertools.product(*soManyLists))))
 
-	print(summing % M)
-
-def maximizing_it_2():
-
-	numberOfTimes, M = map(int, input().split())
-	summing = 0
-	test = []
-
-	for _ in range(numberOfTimes):
-
-		lists = list(map(int, input().split()[1:]))
-		get_max = list(enumerate(list(map(lambda x: (x ** 2) % M, lists))))
-		
-		for index, value in get_max:
-			test.append((value, index))
-
-		summing += lists[max(test)[1]] ** 2
-
-	print(summing % M)
-
-
-def maximizing_it_3():
-
-	numberOfTimes, M = map(int, input().split())
-
-	soManyLists = [list(map(lambda x: int(x) ** 2, input().split()[1:])) for _ in range(numberOfTimes)]
-	soManyLists = list(map(lambda x: sum(x)%M, list(itertools.product(*soManyLists))))
-
-	'''for i in soManyLists:
-					summing.append(sum(i)%M)'''
-
-	print(max(soManyLists))
+print(max(soManyLists))
 
 
 
@@ -122,4 +89,4 @@ if __name__ == '__main__':
 	# char_combinations_with_replacmente()
 	# compressing_string()
 	# probability_of_a_letter()
-	maximizing_it_3()
+	maximizing_it()
