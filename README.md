@@ -58,11 +58,17 @@ A solução de cada exercício está dividido em funções dentro dos arquivos n
     - Check Subset | [Problema](https://www.hackerrank.com/challenges/py-check-subset)
     - Check Strict Superset | [Problema](https://www.hackerrank.com/challenges/py-check-strict-superset)
     
-    
   - **Math**
   
-  - **Itertools**
-  
+  - [**Itertools**](https://github.com/Wercton/HackerRank_Problems/blob/master/Python/itertools_challenges.py)
+    - itertools.product() | [Problema](https://www.hackerrank.com/challenges/itertools-product)
+    - itertools.permutations() | [Problema](https://www.hackerrank.com/challenges/itertools-permutations)
+    - itertools.combinations() | [Problema](https://www.hackerrank.com/challenges/itertools-combinations)
+    - itertools.combinations_with_replacement() | [Problema](https://www.hackerrank.com/challenges/itertools-combinations-with-replacement)
+    - Compress the String! | [Problema](https://www.hackerrank.com/challenges/compress-the-string)
+    - Iterables and Iterators | [Problema](https://www.hackerrank.com/challenges/iterables-and-iterators)
+    - Maximize It | [Problema](https://www.hackerrank.com/challenges/maximize-it)
+    
   - **Collections**
   
   - **Data and Time**
