@@ -20,11 +20,17 @@ def shoe_store_total_earn():
 
 # Collections.namedtuple()
 def average_students_collections():
-	Student = collections.namedtuple('Student', 'ID MARKS CLASS NAME')
-	example = input().split()
-	example = Student(example[0], example[1], example[2], example[3])
-	print(example)
 
+	rounds = int(input())
+	Student = collections.namedtuple('Student', ' '.join(input().split()))
+	students, counter = [], 0
+
+	for i in range(rounds):
+		data = input().split()
+		students.append(Student(data[0], data[1], data[2], data[3]))
+		counter += int(students[i].MARKS)
+
+	print(counter/rounds)
 
 
 if __name__ == '__main__':
