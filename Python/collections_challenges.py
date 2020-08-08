@@ -18,9 +18,15 @@ def shoe_store_total_earn():
 	print(total_gain)
 
 
-
+# Collections.namedtuple()
+def average_students_collections():
+	Student = collections.namedtuple('Student', 'ID MARKS CLASS NAME')
+	example = input().split()
+	example = Student(example[0], example[1], example[2], example[3])
+	print(example)
 
 
 
 if __name__ == '__main__':
-	shoe_store_total_earn()
+	# shoe_store_total_earn()
+	average_students_collections()
