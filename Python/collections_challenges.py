@@ -33,6 +33,26 @@ def average_students_collections():
 	print(counter/rounds)
 
 
+# Collections.OrderedDict()
+def ordering_dicts():
+
+	ordinary_dict = collections.OrderedDict()
+	
+	for _ in range(int(input())):
+		products = input().split()
+		value = int(products[-1])
+		products.pop()
+		products = " ".join(products)
+		if products not in ordinary_dict:
+			ordinary_dict[products] = value
+		else:
+			ordinary_dict[products] += value
+
+	[print(i, ordinary_dict[i]) for i in ordinary_dict]
+
+
+
 if __name__ == '__main__':
 	# shoe_store_total_earn()
-	average_students_collections()
+	# average_students_collections()
+	ordering_dicts()
