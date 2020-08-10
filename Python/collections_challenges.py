@@ -39,10 +39,12 @@ def ordering_dicts():
 	ordinary_dict = collections.OrderedDict()
 	
 	for _ in range(int(input())):
+
 		products = input().split()
 		value = int(products[-1])
 		products.pop()
 		products = " ".join(products)
+		
 		if products not in ordinary_dict:
 			ordinary_dict[products] = value
 		else:
@@ -51,8 +53,24 @@ def ordering_dicts():
 	[print(i, ordinary_dict[i]) for i in ordinary_dict]
 
 
+# Collections.deque()
+def your_own_deque():
+
+	deque = collections.deque()
+
+	for _ in range(int(input())):
+		command = input().split()
+		if len(command) == 2:
+			eval("deque.{0}({1})".format(command[0], int(command[1])))
+		else:
+			eval("deque.{0}()".format(*command))
+
+	print(*deque)
+
+
 
 if __name__ == '__main__':
 	# shoe_store_total_earn()
 	# average_students_collections()
-	ordering_dicts()
+	# ordering_dicts()
+	your_own_deque()
