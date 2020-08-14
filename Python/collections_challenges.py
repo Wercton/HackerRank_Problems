@@ -68,9 +68,32 @@ def your_own_deque():
 	print(*deque)
 
 
+# DefaultDict Tutorial
+def using_defaultdict():
+
+	d = collections.defaultdict(list)
+	A, B = map(int, input().split())
+
+	for _ in range(A):
+		d['A'].append(input())
+
+	for _ in range(B):
+		b_check = input()
+		if b_check in d['A']:
+			print(*[i for i in range(1, len(d['A']) + 1) if d['A'][i-1] == b_check])
+		else:
+			print(-1)
+
 
 if __name__ == '__main__':
 	# shoe_store_total_earn()
 	# average_students_collections()
 	# ordering_dicts()
-	your_own_deque()
+	# your_own_deque()
+	using_defaultdict()
+	'''d = collections.defaultdict(list)
+				d['A'].append('a')
+				d['A'].append('b')
+				d['A'].append('a')
+				print(d['A'][1])'''
+
