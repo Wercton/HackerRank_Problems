@@ -85,15 +85,15 @@ def using_defaultdict():
 			print(-1)
 
 
+# Word Order
+
+# Company Logo
+
+# Piling Up!
+
 if __name__ == '__main__':
 	# shoe_store_total_earn()
 	# average_students_collections()
 	# ordering_dicts()
 	# your_own_deque()
 	using_defaultdict()
-	'''d = collections.defaultdict(list)
-				d['A'].append('a')
-				d['A'].append('b')
-				d['A'].append('a')
-				print(d['A'][1])'''
-
