@@ -70,9 +70,15 @@ A solução de cada exercício está dividido em funções dentro dos arquivos n
     - Maximize It | [Problema](https://www.hackerrank.com/challenges/maximize-it)
     
   - **Collections**
+    - collections.Counter() | [Problema](https://www.hackerrank.com/challenges/collections-counter)
+    - DefaultDict Tutorial() | [Problema](https://www.hackerrank.com/challenges/defaultdict-tutorial)
+    - Collections.namedtuple() | [Problema](https://www.hackerrank.com/challenges/py-collections-namedtuple)
+    - Collections.OrderedDict() | [Problema](https://www.hackerrank.com/challenges/py-collections-ordereddict)
+    - Collections.deque() | [Problema](https://www.hackerrank.com/challenges/py-collections-deque)
   
   - **Data and Time**
-  
+    - Calendar Module | [Problema](https://www.hackerrank.com/challenges/calendar-module/problem)
+    
   - [**Errors and Exceptions**](https://github.com/Wercton/HackerRank_Problems/blob/master/Python/exceptions.py)
     - Exceptions | [Problema](https://www.hackerrank.com/challenges/exceptions)
     - Incorrect Regex | [Problema](https://www.hackerrank.com/challenges/incorrect-regex)
