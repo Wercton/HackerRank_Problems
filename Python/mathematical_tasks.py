@@ -13,7 +13,13 @@ def poweringmod():
 	print(pow(a, b), pow(a, b, m), sep="\n")
 
 
+# Integers Come In All Sizes
+def summing_powered():
+	a, b, c, d = [int(input()) for _ in range(4)]
+	print((a**b)+(c**d))
+
 
 if __name__ == '__main__':
 	# divmoding()
-	poweringmod()
+	# poweringmod()
+	summing_powered()
