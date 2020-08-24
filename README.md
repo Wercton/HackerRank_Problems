@@ -58,7 +58,10 @@ A solução de cada exercício está dividido em funções dentro dos arquivos n
     - Check Subset | [Problema](https://www.hackerrank.com/challenges/py-check-subset)
     - Check Strict Superset | [Problema](https://www.hackerrank.com/challenges/py-check-strict-superset)
     
-  - **Math**
+  - **Math**  
+    - Mod Divmod | [Problema](https://www.hackerrank.com/challenges/python-mod-divmod)  
+    - Power - Mod Power | [Problema](https://www.hackerrank.com/challenges/python-power-mod-power)  
+    - Integers Come In All Sizes | [Problema](https://www.hackerrank.com/challenges/python-integers-come-in-all-sizes)  
   
   - [**Itertools**](https://github.com/Wercton/HackerRank_Problems/blob/master/Python/itertools_challenges.py)
     - itertools.product() | [Problema](https://www.hackerrank.com/challenges/itertools-product)
