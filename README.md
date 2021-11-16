@@ -6,7 +6,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/Wercton/HackerRank_Problems)](https://github.com/Wercton/HackerRank_Problems) 
 [![GitHub stars](https://img.shields.io/github/stars/Wercton/HackerRank_Problems?color=orange)](https://github.com/Wercton/HackerRank_Problems)
 
-My submission to the programming problems proposed at [HackerRank](https://www.hackerrank.com/dashboard).\
+My submissions to the programming problems proposed at [HackerRank](https://www.hackerrank.com/dashboard).\
 The answers from each exercise are divided into functions inside the files named with its respective topic.
 
 - **Python**
